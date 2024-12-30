@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="lelo"></p>
+    <!-- <script>
+        class car {
+            constructor(name,year){
+                this.name = name;
+                this.year = year;
+            }
+        }
+
+        const mycar1 = new car("leo", 2010);
+        const mycar2 = new car("rwe", 102);
+
+        console.log(mycar1.name)
+    </script> -->
+
+    <!-- <script>
+        class Car {
+            constructor(name, year){
+                this.name = name;
+                this.year = year;
+            }
+            age(){
+                const date = new Date();
+                return date.getFullYear() - this.year;
+            }
+        }
+
+        const myCar = new Car("ford", 2019);
+        console.log(myCar.age())
+    </script> -->
+
+    <script>
+        class car {
+            constructor(brand){
+                this.carName = brand;
+            }
+        present(){
+            return 'i have a ' + this.carName;
+        }
+    }
+
+    class Model extends car {
+        constructor(brand, mod){
+            super (brand);
+            this.model = mod;
+        }
+        show() {
+            return this.present() + ', it is a ' + this.model;
+        }
+    }
+
+    const myCar = new Model("ford", "mustage");
+    document.getElementById("lelo").innerHTML = myCar.show();
+    </script>
+</body>
+</html>                                 

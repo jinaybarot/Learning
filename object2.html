@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="lele"></p>
+    <!-- <script>
+        const person = {};
+
+        person.firstName = "Lela";
+        person.lastName = "mema";
+        person.age = 24;
+    </script> -->
+
+    <!-- <script>
+        const person = new Object();
+
+        person.firstName = "Lela";
+        person.lastName = "mema";
+        person.age = 24;
+    </script> -->
+
+    <!-- <script>
+        const person = function(first, last, age, eye){
+            this.fName = first;
+            this.fName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        const myMom = new person("rekha", "barot", 50, black);
+
+        document.getElementById("lele").innerHTML = myMom.age;
+    </script> -->
+
+    <!-- <script>
+        const person = {
+            first: "jinay",
+            last: "barot",
+            age: 24
+        }
+
+        const lela = {
+            first: "koko",
+            last: "momo"
+        }
+
+        Object.assign(person, lela);
+
+        document.getElementById("lele").innerHTML = Object.entries(person) ;
+    </script> -->
+
+        <script>
+             const person = {
+            first: "jinay",
+            last: "barot",
+            // language: "hindi",
+            age: 24,
+           set lang(lang){
+                return this.language = lang;
+            }
+        }
+
+        person.lang = "en";
+
+        document.getElementById("lele").innerHTML = person.language;
+        </script>
+
+</body>
+</html>

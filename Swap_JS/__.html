@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Add Random Numbers</title>
+</head>
+<body>
+  <button id="addButton">Add Random Number</button>
+  <p>Array: <span id="arrayDisplay"></span></p>
+  <button id="deleteButton">Add Random Number</button>
+
+  <script>
+    let numbers = [];
+
+    document.getElementById("addButton").addEventListener("click", function() {
+      // Generate a random number between 1 and 100
+      let randomNumber = Math.floor(Math.random() * 100) + 1;
+
+      // Add the random number to the array
+      numbers.push(randomNumber);
+
+      // Update the display
+      document.getElementById("arrayDisplay").textContent = numbers.join(", ");
+    });
+
+   
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add/Delete Random Numbers</title>
+</head>
+<body>
+    <button id="addBtn">Add Numbers</button>
+    <button id="deleteBtn">Delete Numbers</button>
+    <div id="output"></div>
+
+    <script>
+        let numbers = [];
+        const outputDiv = document.getElementById("output");
+
+        document.getElementById("addBtn").addEventListener("click", () => {
+            const count = Math.floor(Math.random() * 5) + 1; // Add 1-5 numbers
+            for (let i = 0; i < count; i++) {
+                const randomNumber = Math.floor(Math.random() * 100) + 1;
+                numbers.push(randomNumber);
+            }
+            updateOutput();
+        });
+
+        document.getElementById("deleteBtn").addEventListener("click", () => {
+            const count = Math.min(Math.floor(Math.random() * 5) + 1, numbers.length); // Delete 1-5 numbers, or up to the array's length
+            for (let i = 0; i < count; i++) {
+                const randomIndex = Math.floor(Math.random() * numbers.length);
+                numbers.splice(randomIndex, 1);
+            }
+            updateOutput();
+        });
+
+        function updateOutput() {
+            outputDiv.textContent = "Numbers: " + numbers.join(", ");
+        }
+    </script>
+</body>
+</html>

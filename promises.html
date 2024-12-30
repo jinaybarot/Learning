@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="lela"></p>
+    <script>
+        function myDis(some){
+            document.getElementById("lela").innerHTML = some;
+        }
+
+        let myPromise = new Promise(function(myResolve, myReject) {
+            let x = 0;
+
+            if(x == 0){
+                myResolve("Ok");
+            } else {
+                myReject("Error");
+            }
+        });
+
+        myPromise.then(
+            function(value) {myDis(value);},
+            function(error) {myDis(error);}
+        );
+    </script>
+</body>
+</html>

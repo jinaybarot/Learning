@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="dedo"></p>
+    <script>
+        let conn = new Set(["aa", "bb", "cc"]);
+
+        let text = "";
+        // for (let x of conn){
+        //     text += x + " ";
+        // }
+
+        conn.forEach(function(value){
+            text += value + " ";
+        })
+
+        document.getElementById("dedo").innerHTML = text;
+       
+
+    </script>
+</body>
+</html>

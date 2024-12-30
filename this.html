@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="delo"> </p>
+    <script>
+        // let myFun = (a, b) => a * b;
+
+        // class ClassName{
+        //     constructor(name, year){
+        //         this.fName = name;
+        //         this.year = year;
+        //     }
+        // }
+
+        // const myCar1 = new Car("loso", 2019);
+
+    const person = {
+        firstName: "jinay",
+        lastName: "barot",
+        fullName: function(){
+            return this.firstName + " " +this.lastName;
+        }
+    }
+
+    const member = {    
+        firstName: "meom",
+        lastName: "meom",
+    }
+
+    let fullName = person.fullName.bind(member);
+    document.getElementById("delo").innerHTML = fullName();
+
+    </script>
+</body>
+</html>

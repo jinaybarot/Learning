@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="lelo"></p>
+    <!-- <script>
+        function myLelo(some){
+            console.log(some);
+        }
+
+        function myFirst(){
+            myLelo("helloo");
+        }
+
+        function mySecond(){
+            myLelo("lelallll");
+        }
+
+        myFirst();
+        mySecond();
+
+    </script> -->
+
+    <!-- <script>
+        setTimeout(myLelo, 2000);
+
+        function myLelo(){
+            console.log("heyy there")
+        }
+    </script> -->
+
+    <!-- <script>
+        async function meMloe() {
+            let myPromise = new Promise(function(resolve, reject){
+                resolve("i have takkkeeen ");
+            });
+            console.log(await myPromise)
+        }
+
+        meMloe()
+    </script> -->
+
+    <!-- <form id="memo" action="#">
+        First name: <input type="text" name="fname" value="jinay">
+        last name: <input type="text" name="lname" value="barot">
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        const x = document.forms["memo"];
+        let text = "";
+    for (let i = 0; i < x.length ;i++){
+        text += x.elements[i].value + "<br>";
+    }
+    console.log(text);
+    </script> -->
+
+    <!-- <script>
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            if(x == 0){
+                alert("enter name first");
+                return false;
+            }
+        }
+    </script>
+
+    <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+       Name: <input type="text" name="fname">
+       <input type="submit" value="submit">
+    </form> -->
+
+    <!-- <form action="#" method="post">
+        <input type="text" name="fname" required>
+        <input type="submit" value="submit">
+    </form> -->
+
+    <!-- Input field -->
+    <!-- <input type="text" id="myInput" placeholder="Enter text"> -->
+
+    <!-- Button to get input value -->
+    <!-- <button onclick="getValue()">Get Value</button> -->
+
+    <!-- Script to get input value -->
+    <!-- <script>
+        function getValue() {
+            // Get the input element by its ID
+            let inputField = document.getElementById('myInput').value;
+
+            console.log(inputField)
+
+            // Get the value of the input field
+            let value = inputField + 1;
+
+            // Display the value in an alert
+            // alert("Input value: " + value);
+
+            console.log(value)
+        } -->
+    <!-- <script>
+        function myDis(some) {
+            document.getElementById("lelo").innerHTML = some;
+        }
+
+        function myFirst(){
+            myDis("heyy")
+        }
+
+        function myLast(){
+            myDis("there !!")
+        }
+
+        myFirst();
+        myLast();
+    </script> -->
+
+    <!-- <script>
+        function myDis(some){
+            document.getElementById("lelo").innerHTML = some;
+        }
+
+        function myCal(num1, num2){
+            let num = num1 + num2;
+            return num;
+        }
+        
+        let result = myCal(4,8);
+        myDis(result);
+
+    </script> -->
+
+    <!-- <script>
+        function myDis(some){
+            document.getElementById("lelo").innerHTML = some;
+        }
+
+        function myCal(num1, num2){
+            let num = num1 + num2;
+           myDis (num);
+        }
+        
+         myCal(4,8);
+
+    </script> -->
+
+    <script>
+        function myDis(some){
+            document.getElementById("lelo").innerHTML = some;
+        }
+
+        function myCal(num1, num2, myCallback){
+            let num = num1 + num2;
+          myCallback (num);
+        }
+        
+         myCal(4,8, myDis);
+
+    </script>
+
+</body>
+
+</html>

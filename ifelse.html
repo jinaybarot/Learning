@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="name" id="value">
+    <button type="button" onclick="myFun()">CLICK</button>
+    <p id="dede"></p>
+
+    <script>
+        // function myFun(){
+        //    let voteable;
+        //    let age = Number(document.getElementById("value").value);
+        //    if (isNaN(age)){
+        //     voteable = "it is not a number";
+        //    }else {
+        //     voteable = (age < 18) ? "too young" : "too old";
+        //    }
+        //    document.getElementById("dede").innerHTML = voteable + " for vote";
+        // }
+
+        let day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "sunday"; 
+                break;
+
+            case 1:
+                day = "monday";
+                break;
+
+            case 2:
+                day = "tuesday";
+                break;
+
+            case 3:
+                day = "wednesday";
+                break;
+
+            case 4:
+                day = "thursday";
+                break;
+
+            case 5:
+                day = "friday";
+                break;
+
+            case 6:
+                day = "saturday";
+                break;
+
+            // default:
+            //     day = "good day";
+        }
+
+        document.getElementById("dede").innerHTML = "today is " + day;
+    </script>
+</body>
+
+</html>
